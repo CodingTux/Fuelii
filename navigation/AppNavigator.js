@@ -10,6 +10,7 @@ import { CardItem, Text, Left } from "native-base";
 import First from "../screen/First";
 import SmartModeMain from '../screen/SmartMode/SmartModeMain'
 import SmartModeAllUser from '../screen/SmartMode/SmartModeAllUser'
+import FuelModeMain from '../screen/FuelMode/FuelModeMain'
 
 import Settings from '../screen/Settings'
 
@@ -27,6 +28,7 @@ const SideMenu = createDrawerNavigator(
     Home: { screen: First },
     SmartModeMain: SmartModeMain,
     SmartModeAllUser: SmartModeAllUser,
+    FuelModeMain: FuelModeMain,
     Settings: Settings
   },
   {
@@ -120,7 +122,7 @@ const SideMenu = createDrawerNavigator(
                   icon={require("../assets/fuel.png")}
                   onPress={() => {
                     props.navigation.closeDrawer();
-                    props.navigation.navigate("Home");
+                    props.navigation.navigate("FuelModeMain");
                   }}
                 />
                 <Text style={{ color: "#FCAE5E", fontSize: hp(3) }}>

@@ -53,7 +53,8 @@ class First extends React.Component {
                 bottom: 0
               }}
               icon="eye"
-              onPress={() => console.log("Pressed")}
+              onPress={() => this.props.navigation.navigate("FuelModeMain")}
+
             />
           )
         },
